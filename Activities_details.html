@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="Activities_details.css" class="css">
+</head>
+<body>
+    <header>
+        <div class="nav-logo">
+            <img src="https://rvu.edu.in/wp-content/themes/rvu/images/header_logo.svg" alt="rvu-logo" height="80px">
+        </div>
+        <div class="nav-tags">
+            <a href="#">About RVU</a>
+            <a href="#">Academics</a>
+            <a href="#">Blogs</a>
+            <a href="#">Events</a>
+            <a href="#">TIFA 2023</a>
+            <a href="#">Research</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+        </div> 
+    </header>
+    <section class="details" id="details">
+        <div class="Activities-event">
+            <div class="event-name">
+                <h2 id="eventName"></h2>
+            </div>
+            <div class="event-cards">
+                <ul>
+                    <li>
+                        <div class="event-image">
+                            <img src="https://admissiondetails.in/wp-content/uploads/2022/02/RV-University-Bengaluru-2.jpg" class="eve-img">
+                        </div>
+                    </li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var params = new URLSearchParams(window.location.search);
+            var eventName = params.get('event');
+            var eventNameElement = document.getElementById('eventName');
+            if (eventName) {
+                eventNameElement.textContent = eventName;
+            }
+        });
+    </script>
+</body>
+</html>

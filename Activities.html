@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="activities.css" class="css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav-logo">
+            <img src="https://rvu.edu.in/wp-content/themes/rvu/images/header_logo.svg" alt="rvu-logo" height="80px">
+        </div>
+        <div class="nav-tags">
+            <a href="#">About RVU</a>
+            <a href="#">Academics</a>
+            <a href="#">Blogs</a>
+            <a href="#">Events</a>
+            <a href="#">TIFA 2023</a>
+            <a href="#">Research</a>
+            <a href="#">Contact</a>
+            <a href="#">Careers</a>
+        </div> 
+    </header>
+    <section class="Activities-Home" id="Activities-Home">
+        <div class="Activities-Heading">
+            <h1 id="schoolHeading">School of Computer Science and Engineering</h1>
+        </div>
+        <div class="Activities-event">
+            <div class="event-name">
+                <h2 id="event1">Academic activities organised during the month</h2>
+            </div>
+            <div class="event-cards">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="view">
+                    <a href="Activities_details.html?event=Academic%20activities%20organised%20during%20the%20month">View more<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="Activities-event">
+            <div class="event-name">
+                <h2 id="event2">Student and faculty Achievements</h2>
+            </div>
+            <div class="event-cards">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="view">
+                    <a href="Activities_details.html?event=Student%20and%20faculty%20Achievements">View more<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="Activities-event">
+            <div class="event-name">
+                <h2 id="event3">Colloborations</h2>
+            </div>
+            <div class="event-cards">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="view">
+                    <a href="Activities_details.html?event=Colloborations">View more<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="Activities-event">
+            <div class="event-name">
+                <h2 id="event4">Research & Faculty/ student Publications</h2>
+            </div>
+            <div class="event-cards">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="view">
+                    <a href="Activities_details.html?event=Research%20&%20Faculty/%20student%20Publications">View more<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="Activities-event">
+            <div class="event-name">
+                <h2 id="event5">Proffesional activity outside RVU</h2>
+            </div>
+            <div class="event-cards">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="view">
+                    <a href="Activities_details.html?event=Proffesional%20activity%20outside%20RVU">View more<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="Activities-event">
+            <div class="event-name">
+                <h2 id="event6">Support for Admission & other Institution building initiatives</h2>
+            </div>
+            <div class="event-cards">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="view">
+                    <a href="Activities_details.html?event=Support%20for%20Admission%20&%20other%20Institution%20building%20initiatives">View more<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="Activities-event">
+            <div class="event-name">
+                <h2 id="event7">Admissions and Outreach</h2>
+            </div>
+            <div class="event-cards">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="view">
+                    <a href="Activities_details.html?event=Admissions%20and%20Outreach" >View more<i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var params = new URLSearchParams(window.location.search);
+            var selectedSchool = params.get('school');
+            var headingElement = document.getElementById('schoolHeading');
+            if (selectedSchool) {
+                headingElement.textContent = selectedSchool;
+            }
+        });
+    </script>
+</body>
+</html>
